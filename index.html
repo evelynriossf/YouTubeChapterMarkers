@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>Chapter Marker Player Example</title>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="chapter_marker_player.css">
+  <script type="text/javascript" src="chapter_marker_player.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <h1>Chapter Marker Player Example</h1>
+      <h3>Under the Golden Gate LIVE! May 2, 2014 Michael Soldier, Philip Huang, Rasa Vitalia FULL VERSION</h3>
+      <div class="col-md-6">
+      <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+        <div id="player">
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="chapters">
+      </div>
+    </div>
+  </div>
+
+<!--   <h3>Under the Golden Gate LIVE!! April 4</h3>
+  <div id="captions-session-player"></div> -->
+
+  <script type="text/javascript">
+    ChapterMarkerPlayer.insert({
+      container: 'player',
+      videoId: 'VsNp-E2_6p0',
+      width: 600,
+// BEGIN_INCLUDE(define_chapters)
+chapters: {
+  0: 'Introductory Song',
+  82: 'Michael Soldier',
+  1482: 'Philip Wang',
+  3437: 'Rasa Vitalia',
+  4468: 'Rasa Vitalia Performs',
+  4761: 'Philip Wang Performs'
+}
+// END_INCLUDE(define_chapters)
+});
+
+    // ChapterMarkerPlayer.insert({
+    //   container: 'captions-session-player',
+    //   videoId: 'i73SZO3MHTA',
+    //   width: 600,
+    //   chapters: {
+    //     0: 'Start',
+    //     6: 'Introductions',
+    //     50: 'Overview',
+    //     240: 'Real-Time Captions for I/O Live',
+    //     320: 'Caption Gadget for Live Events',
+    //     646: 'Timed Text for HTML5',
+    //     1624: 'YouTube Captions API',
+    //     2813: 'Questions & Answers'
+    //   }
+    // });
+</script>
+</body>
+</html>
